@@ -6,7 +6,7 @@ import path = require("path")
 
 const app: express.Application = express();
 
-const port: any = process.env.OPENSHIFT_NODEJS_PORT || 8000;
+const port: any = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 const server_ip_address: string = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 //Static file rendering
