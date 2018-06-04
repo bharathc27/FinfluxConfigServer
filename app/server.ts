@@ -10,7 +10,9 @@ const port: any = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 const server_ip_address: string = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 //Static file rendering
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../app/public')));
+
+console.log("dirName : ", __dirname + " public Folder " + path.join(__dirname, "../app/public"));
 
 //Routing
 // app.use("/", IndexController);

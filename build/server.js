@@ -1,10 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
-var controllers_1 = require("./controllers");
+var path = require("path");
 var app = express();
-var port = process.env.PORT || 8000;
-app.use('/login', controllers_1.LoginController);
-app.listen(port, function () {
-    console.log("app is listening on port : ${port}");
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+//Static file rendering
+app.use(express.static(path.join(__dirname, '../app/public')));
+console.log("dirName : ", __dirname + " public Folder " + path.join(__dirname, "../app/public"));
+//Routing
+// app.use("/", IndexController);
+// app.use('/login', LoginController);
+app.listen(port, server_ip_address, function () {
+    console.log("app is listening on " + server_ip_address
+        + "port : " + port);
 });

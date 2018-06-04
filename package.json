@@ -2,10 +2,10 @@
   "name": "configserver",
   "version": "1.0.0",
   "description": "FinFluxConfigServer",
-  "main": "build/server.js",
+  "main": "app/server.ts",
   "scripts": {
     "tsc": "tsc",
-    "start": "ts-node app/server.ts"
+    "start": "node build/server.js"
   },
   "repository": {
     "type": "git",
