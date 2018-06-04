@@ -7,7 +7,7 @@ import path = require("path")
 const app: express.Application = express();
 
 const port: any = process.env.OPENSHIFT_NODEJS_PORT || 8000;
-const server_ip_address: string = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+const server_ip_address: string = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 //Static file rendering
 app.use(express.static(path.join(__dirname, '../app/public')));

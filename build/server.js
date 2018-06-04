@@ -4,7 +4,7 @@ var express = require("express");
 var path = require("path");
 var app = express();
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 //Static file rendering
 app.use(express.static(path.join(__dirname, '../app/public')));
 console.log("dirName : ", __dirname + " public Folder " + path.join(__dirname, "../app/public"));
