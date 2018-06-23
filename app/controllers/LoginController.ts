@@ -1,17 +1,28 @@
-import {Router, Request, Response} from 'express';
+import {Router, Request, Response, IRouter} from 'express';
+import { IAppRouter } from './IRouter';
 
-const router: Router = Router();
+export class LoginController implements IAppRouter {
 
-router.get("/", (req: Request, resp: Response) => {
-    resp.send("Hello World");
-});
+    private router: Router;
 
-router.get("/:name", (req: Request, resp: Response) =>  {
-    
-    let {name} = req.params;
+    constructor() {
+        this.router = Router();
+        this.router.get("/", this.routeHome)
+        this.router.get("/:name", this.routeName);
+    }
 
-    resp.send('Hello : ${name}');
+    private routeHome(req: Request, resp: Response) : void {
+        resp.send("Hello World");
+    }
 
-});
+    private routeName(req: Request, resp: Response) {
+        let {name} = req.params;
+        
+        resp.send('Hello : ${name}');
+    }
 
-export const LoginController: Router = router;
+    public getRouter() : Router {
+        return this.router;
+    }
+
+}

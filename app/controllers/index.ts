@@ -1,10 +1,18 @@
 import {Router, Request, Response} from 'express';
-const router: Router = Router();
 
-router.get("/", (req: Request, resp: Response) => {
-    resp.send("Hello Index");
-});
+import {LoginController} from './LoginController';
+import { IAppRouter } from './IRouter';
 
-export * from './LoginController'
+export class AppRouter {
 
-export const IndexController: Router = router;
+    private loginController : LoginController;
+    
+    constructor() {
+        this.loginController = new LoginController();
+    }
+
+    public getLoginController() : LoginController {
+        return this.loginController;
+    } 
+
+};
