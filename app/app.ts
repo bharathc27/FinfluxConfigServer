@@ -36,7 +36,7 @@ export class App {
         //Static routing
         //Static file rendering
         this.app.use("/static", express.static(path.join(__dirname, '../app/public')));
-        this.app.use(express.static(path.join(__dirname, '../angular/dist/angular/')));
+        this.app.use(express.static(path.join(__dirname, '../angular/dist/angular')));
         console.log("angular path : " + path.join(__dirname, '../angular/dist/angular/index.html'));
         
         ErrorHandler.addErrorHandler();

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "configurations": {
-    "API_BASE_URL": "https://106.51.39.37:4443/?tenantIdentifier=bssinternaltest",
+    "API_BASE_URL": "https://106.51.39.37:4443/",
     "CLIENT_ID": "mobile-app",
     "CLIENT_SECRET": "mobile123",
     "GRANT_TYPE_REFRESH": "refresh_token",
