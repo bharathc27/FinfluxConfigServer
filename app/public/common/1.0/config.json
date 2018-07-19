@@ -2,19 +2,21 @@
   "version": "1.0",
   "configurations": {
     "API_BASE_URL": "https://106.51.39.37:4443/",
+    "CLIENT_TYPE" : "WhiteLabel",
     "CLIENT_ID": "mobile-app",
     "CLIENT_SECRET": "mobile123",
     "GRANT_TYPE_REFRESH": "refresh_token",
-    "PLATFORM_TENANT_ID_VALUE": "chaitanyatest",
+    "PLATFORM_TENANT_ID_VALUE": "bssinternaltest",
     "TEMPLATE_VERSION": "48",
     "HOME_MENU_CONFIG": "{\"version\":\"1.0\",\"homeScreenMenu\":[{\"component\":\"ADD_NEW_CLIENT\",\"displayName\":\"Add new client\",\"order\":\"1\",\"status\":\"true\"},{\"component\":\"COLLECTION\",\"displayName\":\"Collection\",\"order\":\"2\",\"status\":\"true\"},{\"component\":\"HOME\",\"displayName\":\"Home\",\"order\":\"10\",\"status\":\"true\"},{\"component\":\"CENTER\",\"displayName\":\"Center\",\"order\":\"3\",\"status\":\"true\"},{\"component\":\"GROUP\",\"displayName\":\"Group\",\"order\":\"4\",\"status\":\"true\"},{\"component\":\"INDIVIDUALS\",\"displayName\":\"Individuals\",\"order\":\"5\",\"status\":\"true\"},{\"component\":\"CB_REPORT\",\"displayName\":\"CB Report\",\"order\":\"6\",\"status\":\"true\"},{\"component\":\"SURVEY\",\"displayName\":\"Survey\",\"order\":\"9\",\"status\":\"true\"},{\"component\":\"MAPS\",\"displayName\":\"Maps\",\"order\":\"8\",\"status\":\"true\"},{\"component\":\"LOANS\",\"displayName\":\"Loans\",\"order\":\"7\",\"status\":\"true\"},{\"component\":\"BUG\",\"displayName\":\"Bug\",\"order\":\"11\",\"status\":\"true\"},{\"component\":\"SETTING\",\"displayName\":\"Setting\",\"order\":\"12\",\"status\":\"true\"}]}",
     "HOME_SCREEN_CONFIG": "{\"version\":\"1.0\",\"homeScreen\":[{\"component\":\"INDIVIDUAL\",\"displayName\":\"Individual\",\"order\":\"1\",\"status\":\"true\"},{\"component\":\"GROUP\",\"displayName\":\"Group\",\"order\":\"2\",\"status\":\"true\"},{\"component\":\"CENTER\",\"displayName\":\"Center\",\"order\":\"3\",\"status\":\"true\"},{\"component\":\"APPLY_LOAN\",\"displayName\":\"Apply Loan\",\"order\":\"4\",\"status\":\"true\"},{\"component\":\"LOAN_STATUS\",\"displayName\":\"Loan Status\",\"order\":\"5\",\"status\":\"true\"},{\"component\":\"LOAN_DISBURSE\",\"displayName\":\"Loan Disburse\",\"order\":\"6\",\"status\":\"true\"},{\"component\":\"SCHEDULE_MEETING\",\"displayName\":\"Schedule Meeting\",\"order\":\"7\",\"status\":\"true\"},{\"component\":\"COLLECTION\",\"displayName\":\"Collection\",\"order\":\"8\",\"status\":\"true\"},{\"component\":\"DEFAULTERS\",\"displayName\":\"Defaulters\",\"order\":\"9\",\"status\":\"true\"}],\"homeScreenWidget\":[{\"component\":\"COLLECTION\",\"graphType\":\"PIE_CHART\",\"order\":\"1\",\"status\":\"true\"}]}",
-    "ENABLE_HOME_STATISTICS" : "false",
-    "ENABLE_CENTER_STATISTICS" : "true",
-    "ENABLE_CENTER_COLLECTION_STATISTICS" : "true",
-    "ENABLE_PARTIA_PAY_EDIT" : "false",
-    "ENABLE_DENOMINATION" : "true",
-    "LEAVE_ATTENDANCE_TYPES" : "{\"version\":\"1.0\",\"LEAVE_ATTENDANCE_TYPES\":[{\"id\":1,\"code\":\"attendanceType.present\",\"value\":\"Present\"},{\"id\":2,\"code\":\"attendanceType.absent\",\"value\":\"Absent\"},{\"id\":3,\"code\":\"attendanceType.approved\",\"value\":\"Approved\"},{\"id\":4,\"code\":\"attendanceType.leave\",\"value\":\"Leave\"},{\"id\":5,\"code\":\"attendanceType.late\",\"value\":\"Late\"}]}"
+    "ENABLE_HOME_STATISTICS": "false",
+    "ENABLE_CENTER_STATISTICS": "true",
+    "ENABLE_CENTER_COLLECTION_STATISTICS": "true",
+    "ENABLE_PARTIA_PAY_EDIT": "false",
+    "ENABLE_DENOMINATION": "true",
+    "isDenominationEnabled":"true",
+    "isReceiptCaptureEnabled": "false"
   }
 
 }
